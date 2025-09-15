@@ -35,6 +35,14 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     // [4] websocket
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    // [5] JSOUP
+    implementation 'org.jsoup:jsoup:1.21.2'
+    // [6] Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.35.0'
+    // [7] webDriverManager
+    implementation 'io.github.bonigarcia:webdrivermanager:6.3.1'
+    // [8] myBatis
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.5'
 }
 
 tasks.named('test') {

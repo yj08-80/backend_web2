@@ -1,0 +1,12 @@
+[ Jsoup ]
+    1. 그레이들 설치, http://mvnrepository.com/
+        1) jsoup
+        2) Jsoup Java HTML Parser
+        3) implementation 'org.jsoup:jsoup:1.21.2'
+
+    2. 주요 메소드
+        1) 크롤링할 웹주소의 HTML을 자바의 Document 객체로 가져오기
+            Document document = Jsoup.connect( 크롤링할웹주소 ).get()
+        2) 특정한 마크업(요소) 가져오기, 1개일때 : Element / N개일때 : Elements
+
+[ Selenium ]

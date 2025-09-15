@@ -1,0 +1,13 @@
+[ DAO : JDBC ]
+    1. 정의 : 자바에서 DB와 직접 연결하고 SQL 실행을 담당
+    2. 주요 인터페이스 : Connection, PreparedStatementm ResultSet
+
+[ MyBatis ]
+    1. 정의 : JDBC보다 편리한 기능 제공, 객체 자동 매핑
+    2. 특징
+        1) SQL 매핑   2) 결과 매핑    3) 유연성    4) 스프링에서 공식 지원
+    3. 설치
+        1) 의존성 추가 : start.spring.io 단) DBMS 라이브러리도 같이 존재해야한다. mysql/oracle등등
+    4. JAVA와 DB 연동 설정, application.properties 파일 이용한 자동으로 db연동
+        1) application.properties 파일은 src->main->resources 폴더 내 위치한다
+        2) 한글 깨지는 경우 : 인텔리제이 -> 설정 -> '파일 인코딩' 검색 후 -> '프로퍼티에 대한 디폴트 인코딩' -> 'UTF-8'
