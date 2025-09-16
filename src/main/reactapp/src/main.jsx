@@ -21,6 +21,19 @@ const root = document.querySelector( "#root" );
 const create = createRoot( root );
 // 4. root에 렌더링할 컴포넌트(화면함수)
 // 4-1 : 렌더링할 컴포넌트(함수) 가져오기
-import App from './App.jsx';
-// 4-2 : 렌더링하기
-create.render( <App></App> );
+// import App from './App.jsx';
+// // 4-2 : 렌더링하기
+// create.render( <App></App> );
+
+// day01
+// import Component1 from './ example/day01/Component1';
+// import Component2 from './ example/day01/Component2';
+// import Component3 from './ example/day01/Component3';
+import Task2 from './ example/day01/Task2';
+// 둘 중에 하나 쓰면 됨
+// render 1번만 가능하다!
+// create.render( <Component1></Component1> );
+// create.render( <Component1/> );
+// create.render( <Component2/> );
+// create.render( <Component3/> );
+create.render( <Task2/> );
