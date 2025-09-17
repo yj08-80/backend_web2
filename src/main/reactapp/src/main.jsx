@@ -29,11 +29,26 @@ const create = createRoot( root );
 // import Component1 from './ example/day01/Component1';
 // import Component2 from './ example/day01/Component2';
 // import Component3 from './ example/day01/Component3';
-import Task2 from './ example/day01/Task2';
+// import Task2 from './ example/day01/Task2';
 // 둘 중에 하나 쓰면 됨
 // render 1번만 가능하다!
 // create.render( <Component1></Component1> );
 // create.render( <Component1/> );
 // create.render( <Component2/> );
 // create.render( <Component3/> );
-create.render( <Task2/> );
+// create.render( <Task2/> );
+
+
+// day02
+// import Component4 from './ example/day02/Component4';
+// import Component5 from './ example/day02/Component5';
+// import Component6 from './ example/day02/Component6';
+// import Component7 from './ example/day02/Component7';
+// import Task3 from './ example/day02/Task3';
+import Task4 from './ example/day02/Task4';
+//create.render( <Component4/> );
+// create.render( <Component5/> );
+// create.render( <Component6/>);
+// create.render( <Component7/> );
+// create.render( <Task3/> );
+create.render( <Task4/> );
