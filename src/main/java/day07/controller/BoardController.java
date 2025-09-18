@@ -4,7 +4,6 @@ package day07.controller;
 import day07.model.dto.BoardDto;
 import day07.service.BoardService;
 import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
