@@ -45,10 +45,19 @@ const create = createRoot( root );
 // import Component6 from './ example/day02/Component6';
 // import Component7 from './ example/day02/Component7';
 // import Task3 from './ example/day02/Task3';
-import Task4 from './ example/day02/Task4';
+// import Task4 from './ example/day02/Task4';
 //create.render( <Component4/> );
 // create.render( <Component5/> );
 // create.render( <Component6/>);
 // create.render( <Component7/> );
 // create.render( <Task3/> );
-create.render( <Task4/> );
+// create.render( <Task4/> );
+
+
+// day03
+// import Component8 from './ example/day03/Component8';
+// import Component9 from './ example/day03/Component9';
+import Component10 from './ example/day03/Component10';
+// create.render( <Component9/> );
+ create.render( <Component10/> );
+
