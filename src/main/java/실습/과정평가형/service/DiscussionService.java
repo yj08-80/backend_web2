@@ -23,14 +23,14 @@ public class DiscussionService { // class start
     }
 
     // 토론 글 삭제
-    public boolean disDelete( String password ){
-        boolean result = discussionMapper.disDelete( password );
+    public boolean disDelete( int id ,String password ){
+        boolean result = discussionMapper.disDelete( id , password );
         return  result;
     }
 
     // 영화별 토론 전체 조회
-    public List<DiscussionDto> disPrint( int movieId ){
-        List<DiscussionDto> result = discussionMapper.disPrint( movieId );
+    public List<DiscussionDto> disPrint( int movie_id ){
+        List<DiscussionDto> result = discussionMapper.disPrint( movie_id );
         return result;
     }
 

@@ -19,6 +19,7 @@ public class MovieController { // class start
     private final MovieService movieService;
 
     // 영화 등록
+    // "title" : "영화제목" , "director" : "정유진" , "genre" : "SF" , "content" : "영화내용" , "pwd" : "1234"
     @PostMapping("")
     public ResponseEntity<Integer> movieWrite(@RequestBody MovieDto movieDto ){
         int result = movieService.movieWrite( movieDto );

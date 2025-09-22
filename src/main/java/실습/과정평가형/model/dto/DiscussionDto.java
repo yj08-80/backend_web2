@@ -11,7 +11,7 @@ import lombok.*;
 public class DiscussionDto { // class start
 
     private int id;          // 토론글 번호
-    private int movieId;     // 영화 번호
+    private int movie_id;     // 영화 번호
     private String content;  // 내용
     private String password; // 삭제용 비밀번호
 

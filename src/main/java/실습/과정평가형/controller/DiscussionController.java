@@ -18,6 +18,7 @@ public class DiscussionController { // class start
     private final DiscussionService discussionService;
 
     // 토론 글 작성
+    // "movie_id" : "1" , "content" : "정말 재밌어요" , "password" : "1234"
     @PostMapping("")
     public ResponseEntity<Integer>disWrite(@RequestBody DiscussionDto discussionDto ){
         int result = discussionService.disWrite( discussionDto );
@@ -26,15 +27,15 @@ public class DiscussionController { // class start
 
     // 토론 글 삭제
     @DeleteMapping("")
-    public ResponseEntity<Boolean>disDelete( @RequestParam String password ){
-        boolean result = discussionService.disDelete( password );
+    public ResponseEntity<Boolean>disDelete( @RequestParam int id , @RequestParam String password ){
+        boolean result = discussionService.disDelete( id , password );
         return ResponseEntity.status( 200 ).body( result );
     }
 
     // 영화별 토론 전체 조회
-    @Select("")
-    public ResponseEntity<List< DiscussionDto >>disPrint( int movieId ){
-        List<DiscussionDto> result = discussionService.disPrint( movieId );
+    @GetMapping("")
+    public ResponseEntity<List< DiscussionDto >>disPrint( int movie_id ){
+        List<DiscussionDto> result = discussionService.disPrint( movie_id );
         return ResponseEntity.status( 200 ).body( result );
     }
 
