@@ -58,8 +58,15 @@ const create = createRoot( root );
 // import Component8 from './ example/day03/Component8';
 // import Component9 from './ example/day03/Component9';
 // import Component10 from './ example/day03/Component10';
-import Task5 from './ example/day03/Task5';
+// import Task5 from './ example/day03/Task5';
 // create.render( <Component9/> );
 // create.render( <Component10/> );
-create.render( <Task5/> );
+// create.render( <Task5/> );
 
+// day04
+// import Component11 from './ example/day04/Component11';
+// import Component12 from './ example/day04/Component12';
+import Task6 from './ example/day04/Task6';
+// create.render( <Component11/> );
+// create.render( <Component12/> );
+create.render( <Task6/> );
