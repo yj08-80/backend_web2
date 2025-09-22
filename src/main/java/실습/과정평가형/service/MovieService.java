@@ -21,8 +21,8 @@ public class MovieService { // class start
     }
 
     // 영화 삭제
-    public boolean movieDelete( String pwd ){
-        boolean result = movieDelete( pwd );
+    public boolean movieDelete( int movie_id , String pwd ){
+        boolean result = movieMapper.movieDelete( movie_id , pwd );
         return result;
     }
 

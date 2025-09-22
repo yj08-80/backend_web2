@@ -11,7 +11,7 @@ import lombok.*;
 public class MovieDto {
 
     // 멤버변수
-    private int no; // 영화번호
+    private int movie_id; // 영화번호
     private String title; // 영화제목
     private String director; // 영화감독
     private String genre; // 영화장르

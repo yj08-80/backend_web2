@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MovieController { // class start
 
-    private MovieService movieService;
+    private final MovieService movieService;
 
     // 영화 등록
     @PostMapping("")
@@ -27,8 +27,8 @@ public class MovieController { // class start
 
     // 영화 삭제
     @DeleteMapping("")
-    public ResponseEntity<Boolean> movieDelete(@RequestParam String pwd ){
-        boolean result = movieService.movieDelete( pwd );
+    public ResponseEntity<Boolean> movieDelete( @RequestParam int movie_id , @RequestParam String pwd ){
+        boolean result = movieService.movieDelete( movie_id , pwd );
         return ResponseEntity.status( 200 ).body( result );
     }
 
