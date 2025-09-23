@@ -2,7 +2,6 @@ package 실습.과정평가형.controller;
 
 
 import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import 실습.과정평가형.model.dto.DiscussionDto;
@@ -13,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/discussion")
 @RequiredArgsConstructor
+@CrossOrigin( value = "http://localhost:5173")
 public class DiscussionController { // class start
 
     private final DiscussionService discussionService;
