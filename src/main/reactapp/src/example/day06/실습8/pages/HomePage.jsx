@@ -1,6 +1,5 @@
 export default function HomePage( props ){
-
-    return(<>
-        <h3> 메인 페이지</h3>
-    </>)
+    return<>
+        <h3> 홈페이지 </h3>
+    </>
 }
